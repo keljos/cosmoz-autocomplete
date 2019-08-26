@@ -11,4 +11,5 @@ jobs:
     displayName: displayforfirsttestjob
     pool: 'Hosted'
     steps:
+    - script: npm install npm@latest -g 
     - script: npx -c 'gulp azp-report-eslint.js'
