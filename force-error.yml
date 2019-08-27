@@ -11,5 +11,5 @@ jobs:
     displayName: displayforfirsttestjob
     pool: 'Hosted Ubuntu 1604'
     steps:
-    - script: npm install npm@latest -g 
+    - script: sudo npm install npm@latest -g 
     - script: npx -c 'gulp azp-report-eslint.js'
